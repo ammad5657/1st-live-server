@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+        }
+        .road1{
+            width: 100%;
+            height: 104px;
+            margin-top: 185px;
+            
+        }
+        .road2{
+            height: 134px;
+            z-index: -1;
+   
+            transform: rotate(90deg);
+            /* top: 19px; */
+            position: relative;
+            top: -55px;
+             left: 597px;
+        }
+        .c1{
+            height: 100px;
+            width: 15%;
+            position: absolute;
+            top: -101px;
+            left: 5px;
+        }
+        .t1, .t2{
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            top: -48px;
+            animation: weelani 4s linear 0s;
+          
+        }
+        .t1{
+            left: 144px;
+           
+        }
+        .t2{
+             left: 35px;
+        }
+        .tata{
+            animation: carani 4s linear 0s;
+            position: relative;
+        }
+        .c2{
+            animation: carani2 3s linear 1s;
+            height: 166px;
+            width: 12%;
+            position: absolute;
+            top: 20px;
+            /* left: 200px; */
+            right: 290px;
+        }
+        @keyframes carani{
+            0%{
+                left: 0%;
+            }
+            50%{
+                left: 50%;
+            }
+            70%{
+                left: 50%;
+            }
+            100%{
+               left: 80%;
+            }
+        } 
+        @keyframes weelani{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes carani2{
+            0%{
+                top:0%; 
+            }
+            100%{
+                top: 70%;
+            }
+
+        }
+           
+
+        </style>
+</head>
+<body>
+            <img class="road1" src="c6.jpg" alt="">
+
+            <div class="tata">
+            <img class="c1" src="car1.png" alt="">
+            <img class="t1" src="tyre.png" alt="">
+            <img class="t2" src="tyre.png" alt="">
+        </div>
+
+        <img class="road2" src="c7.jpg" alt="">
+        <img class="c2" src="car2.png" alt="">
+
+</body>
+</html>

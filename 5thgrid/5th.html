@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: "c1 c2 c2 c3"
+                   "c1 c2 c2 c3"
+                   "c4 c4 c4 c4";
+}
+.box:nth-child(1){
+grid-area: c1;
+border: 10px solid blue;
+}
+.box:nth-child(2){
+grid-area: c2;
+border: brown 10px solid;
+}
+.box:nth-child(3){
+grid-area: c3;
+border: turquoise 10px solid;
+}
+.box:nth-child(4){
+grid-area: c4;
+border: springgreen 10px solid;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    </div>
+</body>
+</html>

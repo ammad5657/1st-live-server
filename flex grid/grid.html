@@ -1,0 +1,73 @@
+[10:01 AM, 2/1/2022] Software House: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    body{
+        margin:0;
+    }
+
+    #gridParent{
+       width:100vw;
+       height: 100vh;
+       /* border:1px solid red; */
+       display: grid;
+       grid-template: "b2 b1 b3"
+                      "b4 b5 b5"
+                      "b6 b5 b5";
+    }
+
+    .box:nth-child(1){
+        background: red;
+        grid-area: b1;
+    }
+
+    .box:nth-child(2){
+        background: cyan;
+        grid-area: b2;
+    }
+
+    .box:nth-child(3){
+        background: lightgreen;
+        grid-area: b3;
+    }
+    .box:nth-child(4){
+        background: yellow;
+        grid-area: b4;
+    }
+    .box:nth-child(5){
+        background: purple;
+        grid-area: b5;
+    }
+    .box:nth-child(6){
+        background: orange;
+        grid-area: b6;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div id="gridParent">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     
+        
+    </div>
+
+
+
+</body>
+</html>

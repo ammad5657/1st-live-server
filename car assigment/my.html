@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.outer{
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+}
+.inner{
+    animation: innercircle 2s linear infinite 0s;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 80px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+@keyframes innercircle{
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: 60%
+    }
+    100%{
+        top: 0%;
+    }
+}
+</style>
+
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
+d
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+            border: 2px solid black;
+            border-radius: 400px;
+            margin: auto;
+            position: relative;
+        }
+
+        .inner{
+            animation: innercircle 3s linear infinite;
+            width: 80px;
+            height: 80px;
+            background-color: grey;
+            border: 1px solid black;
+            border-radius: 80px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            /* right: 0;
+            left: 0; */
+
+        }
+
+        .prawn{
+            animation: prawncircle 3s linear infinite;
+            width: 80px;
+            height: 80px;
+            background-color: rgb(39, 35, 35);
+            border: 1px solid black;
+            border-radius: 80px;
+            margin: auto;
+            position: absolute;
+            /* top: 0;
+            bottom: 0; */
+            right: 0;
+            left: 0;
+
+        }
+
+        @keyframes innercircle{
+            0%{
+                left: 0%;
+            }
+            /* 25%{
+                left: 25%;
+            } */
+            50%{
+                /* left: 100%; */
+                left: calc(100% - 80px);
+            }
+            /* 75%{
+                left: 25%; */
+            /* } */
+            100%{
+                left: 0%;
+            }
+        }
+        @keyframes prawncircle{
+            0%{
+                top: 0%;
+            }
+            50%{
+                top: calc(100% - 80px);
+            }
+            100%{
+                top: 0%
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="prawn"></div>
+    </div>
+
+</body>
+</html> -->

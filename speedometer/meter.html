@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    #needle{
+        width: 0;
+    height: 0;
+    border-top: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 125px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 26px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transform: rotate(
+680deg
+);
+    transform-origin: bottom;
+    }
+
+    #speedoMeter{
+        position: relative;
+        width: fit-content;
+    }
+
+</style>
+
+</head>
+<body>
+    
+
+    <div id="speedoMeter">
+
+        <img src="meter.png" alt="">
+
+        <div id='needle'>
+
+        </div>
+
+    </div>
+</body>
+</html>

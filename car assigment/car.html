@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}     
+body{
+    background-image: url(bg2.jpg);
+    overflow: hidden;
+}  
+.road1{
+    margin-top: 320px;
+    width: 100%;
+    height: 130px;
+
+}
+.road2{
+    /* transform: skew(235deg,89deg); */
+    margin-left: 63%;
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 226px;
+    height: 160px;
+    right: 178px;
+}
+#car-body{
+    width: 200px;
+    
+}
+.car2{
+    width: 127px;
+    margin-bottom: 200px;
+    position: absolute;
+    bottom: 252px;
+    left: 911px;
+    animation: car2animation 4s ease-in-out 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#w1, #w2{
+    width: 27px;
+    position: absolute;
+
+}
+.car{
+    position: absolute;
+    top:50%;
+    animation: car1animation 4s ease-in-out 0s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+}
+
+
+   #w1{
+            left: 146px;
+            top: 46px;
+        }
+
+        #w2{
+            left: 33px;
+            top: 46px;
+        }
+        .fan{
+    animation-name: fanAnimation;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; 
+}
+.smoke{
+    
+    height: 53px;
+    position: absolute;
+    /* bottom: 200px; */
+    top: 340px;
+    left: -79px;
+    transform: rotate(180deg);
+    animation: smokeani 4s ease-in-out 0s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+}
+
+        @keyframes car1animation{
+            from{
+    left:0;
+}
+
+50%{
+    left: 50%;
+}
+70%{
+    left: 50%;
+}
+100%{
+    left: 85%;
+}
+        }
+        @keyframes car2animation{
+            from{
+                top: 0;
+            }
+            to{
+                top: 73%;
+            }
+        }
+        @keyframes car3ani{
+            from{
+                left: 50%;
+            }
+            to{
+                left: 70%;
+            }
+        }
+        @keyframes fanAnimation {
+
+from{
+    transform: rotate(0deg);
+}
+20%{
+    transform: rotate(360deg);
+}
+40%{
+    transform: rotate(0deg);
+}
+60%{
+    transform: rotate(0deg);
+}
+80%{
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+
+}
+@keyframes smokeani{
+    from{
+    left:0;
+}
+
+50%{
+    left: 45%;
+}
+70%{
+    left: 45%;
+}
+100%{
+    left: 80%;
+}
+}
+.head{
+    position: absolute;
+    left: 73%;
+    bottom: 45%;
+    height: 121px;
+    transform: skew(1deg,19deg);
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <img class="road1" src="myroad.jpg" alt="">
+    <img class="road2" src="myroad.jpg" alt="">
+    <img class="smoke" src="smoke-unscreen.gif" alt="">
+    <div id="aab" class='car'>
+        <img id='car-body' src="my-car.png" alt="">
+        <img class="fan" id='w1' src="wheel.png" alt="">
+        <img class="fan" id='w2' src="wheel.png" alt="">
+    </div>
+    <div>
+        <img class="car2" src="car2-removebg-preview.png" alt="">
+    </div>
+    <img class="head" src="head1-unscreen.gif" alt="">
+
+   
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        
+        *{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+}
+
+    header{
+        height: 60px;
+        background: #f3e0d9;
+        display: flex;
+    }
+    .noob{
+        color: white;
+        margin-left: 11px;
+        margin-top: 7px;
+    }
+
+    ol{
+        list-style-type: none;
+        line-height: 54px;
+    }
+
+    li{
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    #logo{
+        width:150px;
+        height: 120px;;
+        background: #ff9059;
+    }
+
+
+    #logo {
+        position: relative;
+    }
+
+    #logo > div{
+        position: absolute;
+        width:50px;
+        height: 50px;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        border:2px solid white;
+    }
+
+    #offer-box{
+        position: absolute;
+        top: 18%;
+        width: 270px;
+        height: 220px;
+        background: white;
+        left: 15%;
+        padding: 30px;
+    }
+    
+    #offer-box p{
+        margin-top: 10px;        
+        margin-bottom: 10px;        
+    }
+
+    #offer-box h4{
+        color:#979bb4;
+    }
+
+    #offer-box h1{
+        font-size: 2em;
+        margin-top: 10px;
+        font-weight: 900;
+    }
+
+    #main-section{
+        position: relative;
+        z-index: -1;
+    }
+    .furn{
+        width: 100%;
+       
+    }
+
+    .orange-btn{
+        background: #ff9059;
+        color:white;
+        padding-left: 30px;
+        padding-right: 30px;
+        border:none;
+        padding-top:15px;
+        padding-bottom:15px;
+        font-size: 0.7em;;
+    }
+
+</style>
+
+</head>
+<body>
+    
+
+    <header>
+
+        <div id="logo">
+                <div>
+                    <div class="noob">
+                        F U R N
+                    </div>
+                </div>
+        </div>
+
+        <ol>
+            <li>Home</li>
+            <li>Product</li>
+            <li>About</li>
+            <li>Page</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ol>
+
+    </header>
+
+    <section id="main-section">
+        <img class="furn" src="furniture.jpg" alt="">
+
+        <div id="offer-box">
+
+                <div>
+                    <h4>70% SALE OFF</h4>
+                    <h1>FURNITURE AT COST</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam laudantium culpa dolor
+                    </p>
+                    <button class="orange-btn">DISCOVER MORE</button>
+                </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
